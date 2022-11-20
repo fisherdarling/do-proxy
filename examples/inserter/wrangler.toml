@@ -1,0 +1,17 @@
+name = "inserter"
+compatibility_date = "2022-11-19"
+main = "build/worker/shim.mjs"
+
+[durable_objects]
+bindings = [
+    # the `class_name` uses the Rust struct identifier name. Comes from `do_proxy!(Inserter, InserterObject)`.
+  { name = "INSERTER_OBJECT", class_name = "InserterObject" } 
+]
+
+[[migrations]]
+tag = "v1" # Should be unique for each entry
+new_classes = ["InserterObject"] # Array of new classes
+
+[build]
+# Need to install worker-build first: `cargo install worker-build`
+command = "worker-build --release"
