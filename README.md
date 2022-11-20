@@ -76,7 +76,9 @@ command. The object is first initialized _and then_ the command is handled:
 
 ```rust
 let proxy = env.obj::<Person>("bob@buzz.com");
-let resp = proxy.init(Person::new("Bob", bobs_birthday)).and_send(Command::CalculateNextBirthday).await?;
+let resp = proxy
+    .init(Person::new("Bob", bobs_birthday))
+    .and_send(Command::CalculateNextBirthday).await?;
 ```
 
 If you know that the object must be initialized or can't create initialization
