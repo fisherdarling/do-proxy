@@ -1,6 +1,6 @@
 [package]
 name = "do-proxy"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Fisher Darling <fisher@darling.dev>"]
 repository = "https://github.com/fisherdarling/do-proxy"
@@ -8,7 +8,9 @@ license = "MIT"
 description = """
 A library for writing type-safe Durable Objects in Rust.
 """
-categories = ["durable-objects", "cloudflare", "workers"]
+readme = "../README.md"
+categories = ["wasm", "web-programming"]
+keywords = ["durable-objects", "cloudflare", "workers"]
 
 [dependencies]
 async-trait = { workspace = true }
