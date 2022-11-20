@@ -1,10 +1,13 @@
 # do-proxy
 
 [![Crates.io][crates-badge]][crates-url]
+[![Docs.rs][docs-badge]][docs-url]
 [![MIT licensed][mit-badge]][mit-url]
 
 [crates-badge]: https://img.shields.io/crates/v/do-proxy.svg
 [crates-url]: https://crates.io/crates/do-proxy
+[docs-badge]: https://img.shields.io/docsrs/do-proxy/latest
+[docs-url]: https://docs.rs/do-proxy/latest/do_proxy/
 [mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [mit-url]: https://github.com/fisherdarling/do-proxy/blob/master/LICENSE
 
